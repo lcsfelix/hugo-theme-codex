@@ -13,6 +13,7 @@
   @media screen and (min-width: $medium)
     display: block
     visibility: visible
+    background: transparent
     padding-top: 3em
     width: $navWidth
 
@@ -55,15 +56,24 @@
 
 
 .nav__list a
-  color: $grey
-  text-decoration: none
+  color: $black
+  text-decoration: underline
   font-size: 2em
 
   &.active
     color: $black
+    text-decoration: none
     
   &:hover
     color: $black
+    text-decoration: none
 
   @media screen and (min-width: $medium)
-    font-size: 1em
+    font-size: 1.5em
+    color: $white
+
+    &.active
+      color: $white
+
+    &:hover
+      color: $white
