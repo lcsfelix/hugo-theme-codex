@@ -1,6 +1,7 @@
 .social-icons
   display: flex
   justify-content: center
+  align-items: baseline
 
 .social-icons__icon
   width: 1.2rem
@@ -8,14 +9,8 @@
   background-size: contain
   background-repeat: no-repeat
 
+  &>svg
+    color: $white
+
   &:not(:last-child)
     margin-right: 2rem
-
-.social-icons__icon--twitter
-  background-image: url(/icons/twitter.svg)
-
-.social-icons__icon--github
-  background-image: url(/icons/github.svg)
-
-.social-icons__icon--linkedin
-  background-image: url(/icons/linkedin.svg)

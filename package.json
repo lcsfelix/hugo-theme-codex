@@ -30,5 +30,6 @@
     "hugo",
     "blog",
     "go"
-  ]
+  ],
+  "dependencies": {}
 }
