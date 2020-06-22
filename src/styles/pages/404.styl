@@ -2,9 +2,16 @@
 @import 'about'
 
 .splash
-  h1
+  .heading
     display: flex
-    align-items: baseline
+    width: 100%
+
+    .broken-heart
+      svg
+        height: 8em
+
+  h1
+    width: 3em
 
   h2
     a
@@ -19,7 +26,13 @@
 
   @media screen and (min-width: $medium)
     h1
-      span
+      width: max-content
+
+    .heading
+      align-items: baseline
+
+      .broken-heart 
         margin-left: 12px
-    svg
-      height: 0.9em
+
+        svg
+          height: $splashH1size

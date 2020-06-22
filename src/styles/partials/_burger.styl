@@ -5,7 +5,7 @@
   padding: 0 1.5rem
   position: fixed
   width: 100%
-  background: #fff
+  background: transparent
   z-index: 2
 
   @media screen and (min-width: $medium)
@@ -22,7 +22,7 @@
   position: absolute
   width: $meatWidth
   height: $meatHeight
-  background: $black
+  background: $white
   top: "calc(50% - %s / 2)" % $meatHeight
   left: "calc(50% - %s / 2)" % $meatWidth
   transition: all 150ms ease-in
@@ -36,6 +36,8 @@
 .burger__meat--3
   transform: translateY(10px)
 
+.nav--active .burger__meat
+  background: $black
 
 .nav--active .burger__meat--1 
   transform: rotate(45deg)
